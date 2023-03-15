@@ -1,0 +1,35 @@
+using System;
+
+    class program{
+
+       public static void Main(String [] args){
+
+            int d;
+
+            d=int.Parse(Console.ReadLine());
+
+            d = Fact(d);
+
+            Console.WriteLine(d);
+        }
+
+       static int Fact(int n)
+
+        {
+
+            if (n <= 1){
+
+                return 1;
+
+        }
+        
+            return n * Fact(n - 1);
+        
+    }
+
+    }
+        
+        
+
+        
+    
