@@ -1,0 +1,39 @@
+using System;
+
+    class program{
+
+       public static void Main(String [] args){
+
+            int d,e,total;
+
+            d=int.Parse(Console.ReadLine());
+
+            e=int.Parse(Console.ReadLine());
+
+            total = pot(d,e);
+
+            Console.WriteLine(total);
+        }
+
+       static int pot(int n,int m){
+
+       int total;
+
+       if(m==1){
+        return n;
+       }
+       else {
+        total = pot(n,m-1)*n;
+       }
+
+       return total;
+        
+    
+    }
+
+    }
+        
+        
+
+        
+    
